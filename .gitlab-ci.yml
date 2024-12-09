@@ -1,0 +1,18 @@
+stages:
+  - deploy
+
+deploy:
+  image: kroniak/ssh-client
+  stage: deploy
+  only:
+    - main
+  script:
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh $SSH_USER@$SSH_HOST "cd /var/www/html/aldawish-law && (git pull origin main ; /usr/bin/php8.1 artisan migrate  ) > deploy.log"
+
+  after_script:
+    - rm -rf ~/.ssh

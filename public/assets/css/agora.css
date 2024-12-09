@@ -1,0 +1,12 @@
+.fi-page-header-widgets {
+    --cols-lg: repeat(1, minmax(0, 1fr))!important;
+}
+body{
+}
+.fi-timeline-item-heading{
+    justify-content: space-between!important;
+}
+.fi-timeline-section-content .flex-col{
+
+    margin-bottom: 10px!important;
+}
