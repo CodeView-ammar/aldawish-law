@@ -105,17 +105,10 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
-  "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@git.amh.net.au:amh-framework/amh-test.git"
-        },
-        {
+    "repositories": {
+        "producation": {
             "type": "composer",
             "url": "https://svn.amh.net.au:8002"
         }
-    ],
-    "require": {
-        "amh-framework/amh-test": "dev-master"
     }
 }
