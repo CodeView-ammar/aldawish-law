@@ -108,7 +108,7 @@
     "repositories": {
         "producation": {
             "type": "composer",
-            "url": "https://svn.amh.net.au:8002"
+            "url": "https://gitlab.com/api/v4/group/12160558/-/packages/composer/packages.json"
         }
     }
 }
