@@ -1,0 +1,21 @@
+/* resources/css/app.css */
+
+.top-bar {
+    background-color: #f8f9fa; /* لون الخلفية */
+    padding: 10px 0; /* مساحة داخلية */
+    border-bottom: 1px solid #e7e7e7; /* خط أسفل */
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between; /* توزيع العناصر */
+    align-items: center; /* محاذاة العناصر عموديًا */
+}
+
+.top-bar p {
+    margin: 0; /* إزالة الهامش */
+}
+
+.top-bar .btn {
+    margin-left: 10px; /* مساحة بين الأزرار */
+}
